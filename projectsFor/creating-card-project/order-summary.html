@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            background-color: rgba(98, 208, 235, 0.729);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 500px;
+            width: 350px;
+            background-color: #efc6f3;
+            display: flex;
+             flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            border-radius: 15px;
+            
+        }
+        img{
+            height: 200px;
+            width: 350px;
+           border-top-left-radius: 10px;
+           border-top-right-radius: 10px;
+        }
+        .header{
+            font-size: 40px;
+            height: 50px;
+            /* width: 300px; */
+        }
+        
+        .summary{
+            margin: 5px;
+            height: 12%;
+            width: 300px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-style: italic;
+            align-items: center;
+            gap: 10px;
+        }
+        .plan{
+            margin: 3%;
+            height: 14%;
+            width: 80%;
+            background-color: #828fe4;
+            display: flex;
+            border: 1px solid black;
+            flex-direction: row;
+            border-radius: 10px;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 10%;
+            transition: all 0.5s ease-in-out;
+        }
+        .plan:hover{
+            height: 16%;
+            width: 85%;
+            background-color: #7aec69;
+        }
+        .imgmi{
+            display: flex;
+            gap: 5px;
+            align-content: flex-start;
+        }
+        #mini{
+            display: flex;
+            padding-left: 0%;
+            justify-content: start;
+            /* align-items: self-start; */
+            height: 40px;
+            width: 40px;
+            
+        }
+        
+        #button{
+             height: 10%;
+            width: 80%;
+            border-radius: 10px;
+            background-color: #ece1177a;
+            display: flex;
+            color: rgb(194, 194, 90);
+            justify-content: space-around;
+            align-items: center;
+           transition: all 0.5s ease-in;
+            
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        #button:hover{
+            width: 85%;
+            background-color: aqua;
+        }
+        .cancel{
+            margin: 2%;
+            height: 8%;
+            width: 80%;
+            border-radius: 10px;
+            background-color: #c20b0b;
+            display: flex;
+            transition: all 0.5s ease-in;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .cancel:hover{
+            background-color: #99cf19;
+            width: 85%;
+        }
+        
+        
+    </style>
+</head>
+<body>
+   <div class="container">
+
+    <div class="box">
+        
+    <div class="img">
+        <img src="mithai.jpg" alt="Gulab">
+    </div>
+
+    <div class="header"><u> Order Summary</u></div>
+
+    <div class="summary"><p>This is the Order Summary of Your purchage for delicious Gulab Jamun. Let's celebrate!</p>
+    </div>
+    
+    <div class="plan">
+                <div class="imgmi">
+
+                    <div >
+                        <img id="mini" src="mithai.jpg" alt="gulab">
+                    </div>
+                    <div class="annual">
+                        <h3>Special Price</h3>
+                        <h3><b>$99.9/KG</b></h3>
+                    </div>
+                </div>
+            
+            <div class="change">
+                <h4><a href="chang">Change</a></h4>
+            </div>
+    </div>
+
+    
+        <button id="button"><h2><a href="https://www.shreemithai.com/">Proceed to Payment</a></h2></button>
+    
+
+   <button class="cancel"><b><h2>Cancel Order</h2></b></button>
+    </div>
+
+   </div>
+</body>
+</html>
