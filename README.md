@@ -1,2 +1,3 @@
-# project1
+# WED DEVELOPMENT PROJECT
+
 This is the project that i had created previously but today i am pushing it on github
